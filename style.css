@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4a98f7;
+}
+
+.wrapper {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrapper .guess {
+    margin-top: 10px;
+}
+
+.wrapper .input-field {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.input-field input,
+.input-field button {
+    height: 50px;
+    width: calc(100% / 2 - 20px);
+    outline: none;
+    padding: 0 20px;
+    border-radius: 8px;
+}
+
+.input-field input {
+    text-align: center;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.input-field input:disabled {
+    cursor: not-allowed;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+.input-field button {
+    border: none;
+    background: #4a98f7;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-field button:active {
+    transform: scale(0.98);
+}
+
+.hidden-button {
+    display: flex;
+    justify-content: center;
+}
+
+.replay {
+    border: none;
+    background: #4a98f7;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: none;
+}
