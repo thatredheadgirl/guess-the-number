@@ -71,8 +71,17 @@ input::-webkit-outer-spin-button {
     transition: 0.3s;
 }
 
+@keyframes shaker {
+	0% {transform: translate(2px, 0); }
+	50% {transform: translate(-2px, 0); }
+	100% {transform: translate(2px, 0); }
+}
+
 .input-field button:active {
-    transform: scale(0.98);
+    animation-name: shaker;
+	animation-duration: 0.1s;
+	transform-origin:50% 50%;
+	animation-timing-function: linear;
 }
 
 .hidden-button {
